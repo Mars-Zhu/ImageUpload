@@ -62,11 +62,11 @@ class UploadView: NSImageView {
     }
     
     override func performDragOperation(sender: NSDraggingInfo) -> Bool {
-        Swift.print("\(__FUNCTION__)")
+//        Swift.print("\(__FUNCTION__)")
         
         let draggedFiles = sender.draggingPasteboard().propertyListForType(NSFilenamesPboardType) as! [String]
         for aString in draggedFiles {
-            Swift.print(aString)
+//            Swift.print(aString)
             delegate?.dragInto(aString)
         }
         

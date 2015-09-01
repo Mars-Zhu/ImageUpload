@@ -20,12 +20,16 @@ class ViewController: NSViewController, UploadViewProtocol {
         let pathUrl = NSURL(fileURLWithPath: path)!
         let image = NSImage(contentsOfURL: pathUrl)
         uploadView.image = image
-        PXUploadManager.uploadImage(image, imageName: pathUrl.lastPathComponent! ){
+        let timestamp = NSDate().timeIntervalSince1970
+        let tag = "\(pathUrl.lastPathComponent!)+\(timestamp)"
+        let data = tag.dataUsingEncoding(NSUTF8StringEncoding)
+        let base64String = data?.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(0))
+        PXUploadManager.uploadImage(image, imageName:base64String ){
             (bool success) -> Void in
             if success {
-                self.textView.documentView?.setString("http://77g8qy.com1.z0.glb.clouddn.com/\(pathUrl.lastPathComponent!)")
+                self.textView.documentView?.setString("http://77g8qy.com1.z0.glb.clouddn.com/\(base64String!)")
             }
-        };
+        }
     }
     
     override func viewDidLoad() {
