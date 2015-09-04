@@ -37,7 +37,8 @@ class UploadView: NSImageView {
         var roundedRectanglePathern : [CGFloat] = [6.0,6.0,6.0,6.0];
         rounderRectanglePath.setLineDash(&roundedRectanglePathern, count: 4, phase: 0)
         rounderRectanglePath.stroke()
-
+        
+        
     }
     
 
@@ -66,7 +67,6 @@ class UploadView: NSImageView {
         
         let draggedFiles = sender.draggingPasteboard().propertyListForType(NSFilenamesPboardType) as! [String]
         for aString in draggedFiles {
-//            Swift.print(aString)
             delegate?.dragInto(aString)
         }
         

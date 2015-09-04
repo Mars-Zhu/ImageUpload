@@ -14,8 +14,8 @@
 		814247761B91512E00907926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814247741B91512E00907926 /* Main.storyboard */; };
 		814247821B91512E00907926 /* BlogUploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814247811B91512E00907926 /* BlogUploadTests.swift */; };
 		8142478C1B91514E00907926 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142478B1B91514E00907926 /* UploadView.swift */; };
-		81E25BF81B916E1D000BCE46 /* temp.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E25BF71B916E1D000BCE46 /* temp.png */; };
 		81E25BFC1B91C76A000BCE46 /* PXUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E25BFB1B91C76A000BCE46 /* PXUploadManager.m */; };
+		81F7B5501B99841D00C13FAD /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7B54F1B99841D00C13FAD /* MaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +41,10 @@
 		814247801B91512E00907926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		814247811B91512E00907926 /* BlogUploadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogUploadTests.swift; sourceTree = "<group>"; };
 		8142478B1B91514E00907926 /* UploadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
-		81E25BF71B916E1D000BCE46 /* temp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temp.png; sourceTree = "<group>"; };
 		81E25BF91B91C769000BCE46 /* BlogUpload-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlogUpload-Bridging-Header.h"; sourceTree = "<group>"; };
 		81E25BFA1B91C76A000BCE46 /* PXUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUploadManager.h; sourceTree = "<group>"; };
 		81E25BFB1B91C76A000BCE46 /* PXUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUploadManager.m; sourceTree = "<group>"; };
+		81F7B54F1B99841D00C13FAD /* MaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 		FE7B148FBF18071705A413C7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,9 +110,9 @@
 				8142476E1B91512E00907926 /* AppDelegate.swift */,
 				814247701B91512E00907926 /* ViewController.swift */,
 				8142478B1B91514E00907926 /* UploadView.swift */,
+				81F7B54F1B99841D00C13FAD /* MaskView.swift */,
 				81E25BFA1B91C76A000BCE46 /* PXUploadManager.h */,
 				81E25BFB1B91C76A000BCE46 /* PXUploadManager.m */,
-				81E25BF71B916E1D000BCE46 /* temp.png */,
 				814247721B91512E00907926 /* Images.xcassets */,
 				814247741B91512E00907926 /* Main.storyboard */,
 				8142476C1B91512E00907926 /* Supporting Files */,
@@ -231,7 +231,6 @@
 			files = (
 				814247731B91512E00907926 /* Images.xcassets in Resources */,
 				814247761B91512E00907926 /* Main.storyboard in Resources */,
-				81E25BF81B916E1D000BCE46 /* temp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F7B5501B99841D00C13FAD /* MaskView.swift in Sources */,
 				81E25BFC1B91C76A000BCE46 /* PXUploadManager.m in Sources */,
 				8142478C1B91514E00907926 /* UploadView.swift in Sources */,
 				814247711B91512E00907926 /* ViewController.swift in Sources */,

@@ -6,9 +6,11 @@
 //  Copyright (c) 2015年 当扈. All rights reserved.
 //
 
+
 #import <Cocoa/Cocoa.h>
 @interface PXUploadManager : NSObject
 
 + (void)uploadImage:(NSImage *)image imageName:(NSString *)imageName finishBlock:(void(^)(BOOL success))finishBlock;
 
++ (void)uploadImage:(NSImage *)image imageName:(NSString *)imageName finishBlock:(void(^)(BOOL success))finishBlock progressBlock:(void(^)(float percent))progress;
 @end
